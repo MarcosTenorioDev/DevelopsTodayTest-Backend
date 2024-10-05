@@ -7,7 +7,7 @@ const app = express();
 const port = parseInt(env.PORT);
 const host = "0.0.0.0";
 
-app.use(cors({ origin: ["https://develops-today-test-bice.vercel.app", "localhost:5173"] }));
+app.use(cors({ origin: ["https://develops-today-test-bice.vercel.app", "http://localhost:5173"] }));
 
 app.use(express.json());
 
