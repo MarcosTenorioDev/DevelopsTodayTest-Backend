@@ -1,10 +1,13 @@
 import express, { Request, Response } from 'express';
 import { env } from './env';
 import countryRoutes from './routes/country.routes'
+import cors from "cors";
 
 const app = express();
 const port = parseInt(env.PORT)
 const host = '0.0.0.0';
+
+app.use(cors());
 
 app.use(express.json());
 
